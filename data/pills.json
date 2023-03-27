@@ -1,0 +1,9 @@
+{
+    "Pills":[
+        {"number": 1, "name": "Sifrol", "dose": 0.25},
+        {"number": 2, "name": "Sertraline", "dose": 100},
+        {"number": 3, "name": "Pantoprazole", "dose": 20},
+        {"number": 4, "name": "Trajentamet", "dose": 1000},
+        {"number": 5, "name": "Reaptan 10/10", "dose": 20}
+    ]
+}

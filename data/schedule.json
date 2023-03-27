@@ -1,0 +1,110 @@
+{
+  "Schedule": [
+    {
+      "type": "pills",
+      "repeatCount": "forever",
+      "interval": "1",
+      "units": "day",
+      "time": "10:00",
+      "pillNumber": 1,
+      "quantity": 2
+    },
+    {
+      "type": "pills",
+      "repeatCount": "forever",
+      "interval": "1",
+      "units": "day",
+      "time": "10:00",
+      "pillNumber": 2,
+      "quantity": 1
+    },
+    {
+      "type": "pills",
+      "repeatCount": "forever",
+      "interval": "1",
+      "units": "day",
+      "time": "10:00",
+      "pillNumber": 3,
+      "quantity": 1
+    },
+    {
+      "type": "pills",
+      "repeatCount": "forever",
+      "interval": "1",
+      "units": "day",
+      "time": "10:00",
+      "pillNumber": 4,
+      "quantity": 1
+    },
+    {
+      "type": "pills",
+      "repeatCount": "forever",
+      "interval": "1",
+      "units": "day",
+      "time": "10:00",
+      "pillNumber": 5,
+      "quantity": 1
+    },
+    {
+      "type": "pills",
+      "repeatCount": "forever",
+      "interval": "1",
+      "units": "day",
+      "time": "22:00",
+      "pillNumber": 1,
+      "quantity": 2
+    },
+    {
+      "type": "pills",
+      "repeatCount": "forever",
+      "interval": "1",
+      "units": "day",
+      "time": "22:00",
+      "pillNumber": 4,
+      "quantity": 1
+    },
+    {
+      "type": "bins",
+      "repeatCount": "forever",
+      "interval": 2,
+      "units": "week",
+      "epoch": "15/3/2023",
+      "time": "12:00",
+      "flashDelay": 720,
+      "greenBin": true,
+      "redBin": true,
+      "blueBin": false
+    },
+    {
+      "type": "bins",
+      "repeatCount": "forever",
+      "interval": 2,
+      "units": "week",
+      "epoch": "8/3/2023",
+      "time": "12:00",
+      "flashDelay": 720,
+      "greenBin": true,
+      "redBin": false,
+      "blueBin": true
+    },
+    {
+      "type": "dog",
+      "repeatCount": "forever",
+      "interval": 1,
+      "units": "day",
+      "time": "16:00",
+      "flashDelay": 30,
+      "feed": true
+    },
+    {
+      "type": "dog",
+      "repeatCount": "forever",
+      "interval": 1,
+      "units": "month",
+      "epoch": "15/3/2023",
+      "time": "16:00",
+      "flashDelay": 30,
+      "spectra": true
+    }
+  ]
+}
