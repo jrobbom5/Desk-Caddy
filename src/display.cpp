@@ -104,7 +104,7 @@ void BorderBox::init (lv_obj_t* parent, const void* boxImage, int yPos)
     lv_obj_set_size (mpMainContentBoxObj, MAIN_BOX_SIZEX, MAIN_BOX_SIZEY);
     lv_obj_set_pos (mpMainContentBoxObj, MAIN_BOX_POSX, MAIN_BOX_POSY);
     lv_obj_add_style (mpMainContentBoxObj, &mContainerStyle, LV_PART_MAIN);
-    lv_obj_set_style_pad_bottom (mpMainContentBoxObj, 10, LV_PART_MAIN);
+    lv_obj_set_style_pad_bottom (mpMainContentBoxObj, 7, LV_PART_MAIN);
     lv_obj_clear_flag (mpMainContentBoxObj, LV_OBJ_FLAG_SCROLLABLE);
     lv_obj_set_scrollbar_mode (mpMainContentBoxObj, LV_SCROLLBAR_MODE_OFF);
 
@@ -348,7 +348,7 @@ WeatherBox::WeatherBox (lv_obj_t* parent)
     static lv_coord_t col_dsc[] = { LV_GRID_CONTENT, LV_GRID_TEMPLATE_LAST };
     static lv_coord_t row_dsc[] = { LV_GRID_CONTENT, LV_GRID_CONTENT, LV_GRID_TEMPLATE_LAST };
     lv_obj_set_grid_dsc_array (mpMainWeatherContainer, col_dsc, row_dsc);
-    lv_obj_set_style_pad_row (mpMainWeatherContainer, 10, LV_PART_MAIN);
+    lv_obj_set_style_pad_row (mpMainWeatherContainer, 5, LV_PART_MAIN);
     lv_obj_set_style_pad_column (mpMainWeatherContainer, 0, LV_PART_MAIN);
     lv_obj_clear_flag (mpMainWeatherContainer, LV_OBJ_FLAG_SCROLLABLE);
     lv_obj_set_scrollbar_mode (mpMainWeatherContainer, LV_SCROLLBAR_MODE_OFF);
@@ -455,7 +455,6 @@ WeatherBox::WeatherBox (lv_obj_t* parent)
         lv_label_set_text (mpForecastDay[i], "");
         lv_obj_set_grid_cell (mpForecastDay[i], LV_GRID_ALIGN_CENTER, i, 1, LV_GRID_ALIGN_CENTER, 2, 1);
     }
-
     mUpdateIntervalSeconds = 60;
 }
 
@@ -562,7 +561,6 @@ void WeatherBox::update (void)
         {
             maxTempRecord forecastRecord = pWeatherService->getMaxTempRecord (i);
             setWeatherIconImage (mpForecastIcon[i], forecastRecord.icon);
-            // lv_img_set_zoom (mpForecastIcon[i], (45 * 255 / 75));
             temp = String (forecastRecord.temp) + "°";
             lv_label_set_text (mpForecastTemp[i], temp.c_str ());
             lv_label_set_text (mpForecastDay[i], forecastRecord.day.c_str ());

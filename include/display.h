@@ -57,9 +57,6 @@ LV_FONT_DECLARE (OrbitronRegular24);
 #define MINI_BOX_SIZEX 122
 #define MINI_BOX_SIZEY 86
 #define MINI_BOX_ZOOM  100
-// #define MINI_BOX_SIZEX 117
-// #define MINI_BOX_SIZEY 79
-// #define MINI_BOX_ZOOM  100
 #define MINI_BOX_POSY 25
 #define MINI_BOX_YOFFSET 93
 
